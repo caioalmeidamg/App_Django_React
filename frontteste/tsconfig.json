@@ -1,3 +1,5 @@
+//Esse arquivofunciona como uma especie de configuração para typscript 
+//caso esse projeto fosse em JS não haveria esse arquivo
 {
   "compilerOptions": {
     "target": "es5",
@@ -24,3 +26,4 @@
     "src"
   ]
 }
+
