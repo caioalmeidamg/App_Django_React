@@ -5,7 +5,7 @@ from rest_framework.response import Response
 from .models import Produto
 from .serializers import ProdutoSerializer
 
-
+#Essa classe aqui funciona como um retorno de uma view dos dados de uma Api
 class ProdutoListCreateView(generics.ListCreateAPIView):
     queryset = Produto.objects.all()
     serializer_class = ProdutoSerializer

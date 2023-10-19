@@ -5,6 +5,7 @@ from .views import ProdutoListCreateView, criar_produto
 
 #Esse arquivo para rotas serve como uma  espécie de handler da aplicação
 urlpatterns = [
+    #Esse path aqui serve como rota para um post de Produtos
     path('produtos/', criar_produto),
     path('produtos/', ProdutoListCreateView.as_view(), name='produto-list-create'),
 ]
