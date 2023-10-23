@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { botao } from '../../pages/dashboard';
 
 //Classe para produzir uma componente
 class ProductList extends Component {
@@ -38,6 +39,7 @@ render() {
             </li>
         ))}
         </ul>
+        <botao />
         </div>
     );
 }
