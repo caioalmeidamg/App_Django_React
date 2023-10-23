@@ -8,5 +8,5 @@ urlpatterns = [
     #Esse path aqui serve como rota para um post de Produtos
     path('produtos/', resposta.criar_produto),
     #path('produto/<int:produto_id>/', views.obter_produto, name='obter_produto'),
-    path('produtos/', ProdutoListCreateView.as_view(), name='produto-list-create'),
+    path('', ProdutoListCreateView.as_view(), name='produto-list-create'),
 ]
