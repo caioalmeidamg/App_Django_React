@@ -3,6 +3,8 @@ import axios from 'axios';
 import { botao } from '../../pages/dashboard';
 
 //Classe para produzir uma componente
+
+//Essa classe permite com que tratemos a Api em django
 class ProductList extends Component {
     //O constructor funciona como um declarador dos atributos da classe
     constructor() {
