@@ -15,18 +15,11 @@ export const Routes = () => {
               </div>
             }
         />
-      /* --------- Rota ----------- */  
+
         <Route path="/pagina-inicial" element={<h1>teste</h1>} />
-      
-        <Route path="/pagina-inicial" 
-            element={
-            <h1>teste</h1>} 
-        />
 
-        <Route path="/produtos"  Component={
-
-           listaProduto
-        }/>        
+        <Route path="/produtos" Component={listaProduto} />   
+             
       </Switch>
       </BrowserRouter>
     );
