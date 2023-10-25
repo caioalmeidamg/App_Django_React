@@ -1,6 +1,4 @@
-import { Routes } from "./routes";
-import ProductList from "./shared/components/listaProd";
-
+import { Routes } from "./routes/rotas";
 function App(){
   return (
     <Routes/ > 
