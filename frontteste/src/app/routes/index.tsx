@@ -16,6 +16,11 @@ export const Routes = () => {
         />
       /* --------- Rota ----------- */  
         <Route path="/pagina-inicial" element={<h1>teste</h1>} />
+                
+
+
+
+
       </Switch>
       </BrowserRouter>
     );
