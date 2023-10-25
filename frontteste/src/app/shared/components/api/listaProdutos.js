@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { botao } from '../../pages/dashboard';
+import { botao } from '../../../pages/dashboard';
 
 //Classe para produzir uma componente
 
 //Essa classe permite com que tratemos a Api em django
-class ProductList extends Component {
+
+export class listaProduto extends Component {
     //O constructor funciona como um declarador dos atributos da classe
     constructor() {
         super();
@@ -47,4 +48,3 @@ render() {
 }
 }
 
-export default ProductList;
