@@ -6,15 +6,16 @@ import { botao } from '../../../pages/dashboard';
 
 //Essa classe permite com que tratemos a Api em django
 
-export class listaProduto extends Component {
+export class ListaProdutos extends Component {
     //O constructor funciona como um declarador dos atributos da classe
-    constructor() {
+    constructor(){
         super();
         this.state = {
             produtos: [],
         };
     }
 
+    //método chamado após um componente ser montado
     componentDidMount() {
         const api = axios.create({ baseURL:'http://localhost:8000/', });
 
@@ -30,6 +31,7 @@ export class listaProduto extends Component {
         });
     }
 
+    //método utilizado para renderizar o JSX da componente
     render() {
         const { produtos } = this.state;
         return (
@@ -45,6 +47,6 @@ export class listaProduto extends Component {
             <botao />
             </div>
         );
-}
+    }
 }
 

@@ -1,16 +1,24 @@
 import { Link } from "react-router-dom";
 import { Button, Stack } from 'react-bootstrap';
-import { listaProduto } from "./api/listaProdutos";
+import { listaProduto } from "./apiComponents/ListaProdutos";
 
-export const BotaoPadrap = () => {
+//teste do que será criado
+function teste(a,b){
+  return a+b;
+}
+
+/* Em react um componente possui a sua logica definida em JS como funções 
+   |-> ele possui e possui uma função para renderização em jsx
+   |-> uma especie de classe com métodos definidos e uma rederização
+
+*/
+
+export const Pagina1 = (props) => {
   return (
 
     <div>
 
-      <Link >
-        
-      </Link>
-
+      <header>
       <Stack direction="horizontal" gap={2}>
         <Button  variant="primary">
             
@@ -25,13 +33,13 @@ export const BotaoPadrap = () => {
         <nav >
           <div >
             <Link to="/produtos" ><button></button></Link>
-            <a >
+            <a>
               Pesquisar aluno
             </a>
-            <a >
+            <a>
               Cadastrar aluno
             </a>
-            <a >
+            <a>
               <button style={{ borderRadius: "30px" }}>Sair</button>
             </a>
           </div>
@@ -43,6 +51,13 @@ export const BotaoPadrap = () => {
           </span>
         </div>
       </div>
+      </header>
+      
+      <body>
+        <h1>{ teste(1,2) }</h1>
+        <h2> Opa, testando a prpriedade {props.nome}</h2>
+      </body>
+
     </div>
   );
 };
