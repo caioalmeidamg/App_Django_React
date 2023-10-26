@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button, Stack } from 'react-bootstrap';
-import { listaProduto } from "./apiComponents/ListaProdutos";
+import { listaProduto } from "../shared/components/apiComponents/ListaProdutos";
 
 //teste do que será criado
 function teste(a,b){
@@ -13,35 +13,26 @@ function teste(a,b){
 
 */
 
-export const Pagina1 = (props) => {
+export const Home = (props) => {
   return (
 
     <div>
 
       <header>
-      <Stack direction="horizontal" gap={2}>
-        <Button  variant="primary">
-            
-        </Button>
-        <Button as="a" variant="success">
-            Button as link
-        </Button>
-      </Stack>;  
+      <Stack direction="horizontal">
+     
+        <Link to="/produtos" > <Button variant="contained">Contained</Button> </Link>
+        
+      </Stack>  
 
       <div>
         
         <nav >
           <div >
-            <Link to="/produtos" ><button></button></Link>
-            <a>
-              Pesquisar aluno
-            </a>
-            <a>
-              Cadastrar aluno
-            </a>
-            <a>
-              <button style={{ borderRadius: "30px" }}>Sair</button>
-            </a>
+            <Link to="/produtos" ><button>mudar pagina</button></Link>
+            <a> Pesquisar aluno </a>
+            <a> Cadastrar aluno </a>
+            <a> <button style={{ borderRadius: "30px" }}>Sair</button> </a>
           </div>
         </nav>
 
@@ -55,7 +46,7 @@ export const Pagina1 = (props) => {
       
       <body>
         <h1>{ teste(1,2) }</h1>
-        <h2> Opa, testando a prpriedade {props.nome}</h2>
+        <h2> Opa, testando a propriedade {props.nome}</h2>
       </body>
 
     </div>

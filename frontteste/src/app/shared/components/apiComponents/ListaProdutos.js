@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { botao } from '../../../pages/dashboard';
-
+import './ListaProdutos.module.css'
 //Classe para produzir uma componente
 
 //Essa classe permite com que tratemos a Api em django
@@ -12,7 +12,7 @@ export class ListaProdutos extends Component {
         super();
         this.state = {
             produtos: [],
-        };
+        }; 
     }
 
     //método chamado após um componente ser montado
@@ -35,7 +35,7 @@ export class ListaProdutos extends Component {
     render() {
         const { produtos } = this.state;
         return (
-            <div>
+            <div className='div1'>
             <h1>Lista de Produtos</h1>
             <ul>
             {produtos.map((produto) => (
