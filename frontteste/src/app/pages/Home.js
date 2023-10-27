@@ -19,10 +19,8 @@ export const Home = (props) => {
     <div>
 
       <header>
-      <Stack direction="horizontal">
-     
-        <Link to="/produtos" > <Button variant="contained">Contained</Button> </Link>
-        
+      <Stack direction="horizontal">     
+        <Link to="/produtos" > <Button variant="contained">Contained</Button> </Link>      
       </Stack>  
 
       <div>

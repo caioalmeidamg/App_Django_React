@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { botao } from '../../../pages/dashboard';
-import './ListaProdutos.module.css'
+import  styles from './ListaProdutos.module.css';
 //Classe para produzir uma componente
 
 //Essa classe permite com que tratemos a Api em django
@@ -15,7 +15,7 @@ export class ListaProdutos extends Component {
         }; 
     }
 
-    //método chamado após um componente ser montado
+    //método chamado após um componente ser montado - uma especie de constructor
     componentDidMount() {
         const api = axios.create({ baseURL:'http://localhost:8000/', });
 
@@ -35,14 +35,12 @@ export class ListaProdutos extends Component {
     render() {
         const { produtos } = this.state;
         return (
-            <div className='div1'>
+            <div className ={styles.div1}>
             <h1>Lista de Produtos</h1>
-            <ul>
-            {produtos.map((produto) => (
-                <li key={produto.id}>
-                {produto.nome} - R${produto.preco}
-                </li>
-            ))}
+            <ul className= {styles.lista}>
+                {produtos.map((produto) => (
+                    <li className= {styles.item} key={produto.id}> <p> {produto.nome} - R${produto.preco} </p></li>
+                ))}
             </ul>
             <botao />
             </div>
