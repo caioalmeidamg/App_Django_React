@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import { Button, Stack } from 'react-bootstrap';
 import { listaProduto } from "../shared/components/apiComponents/ListaProdutos";
-
+import { Button } from "@mui/material";
 //teste do que será criado
 function teste(a,b){
   return a+b;
@@ -19,9 +18,11 @@ export const Home = (props) => {
     <div>
 
       <header>
-      <Stack direction="horizontal">     
-        <Link to="/produtos" > <Button variant="contained">Contained</Button> </Link>      
-      </Stack>  
+     
+     
+        <Link to="/produtos" > <Button variant="contained">Produtos</Button> </Link>
+        
+      
 
       <div>
         
