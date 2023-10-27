@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+#esse basicamente é o arquivo pai do projeto em si, ele deve
 urlpatterns = [
     
     path('', include('myapp.urls')),
