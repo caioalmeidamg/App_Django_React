@@ -17,7 +17,7 @@ export class ListaProdutos extends Component {
 
     //método chamado após um componente ser montado - uma especie de constructor
     componentDidMount() {
-        const api = axios.create({ baseURL:'http://localhost:8000/', });
+        const api = axios.create({ baseURL:'http://localhost:8000/produtos/', });
 
         //Isso basicamente é uma promise, ele cria uma "api" localmente e realiza um get na url cadastrada
         api.get().then((response) => {
