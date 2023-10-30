@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './app/App';
+import { Footer } from './app/shared/components/Footer'
 import reportWebVitals from './reportWebVitals';
-import './index.css';
+
 //Esse root é uma criação do react utilizada para renderizar a aplicação
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -11,7 +12,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <App />
+    <Footer />
   </React.StrictMode>
+  
 );
 
 // If you want to start measuring performance in your app, pass a function

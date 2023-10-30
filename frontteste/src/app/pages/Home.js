@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom";
-import { listaProduto } from "../shared/components/apiComponents/ListaProdutos";
-import { Button } from "@mui/material";
+import { Header } from "../shared/components/Header";
+import { Footer } from "../shared/components/Footer";
 //teste do que será criado
 function teste(a,b){
   return a+b;
@@ -16,38 +15,15 @@ export const Home = (props) => {
   return (
 
     <div>
-
-      <header>
-     
-     
-        <Link to="/produtos" > <Button variant="contained">Produtos</Button> </Link>
-        
       
+      <Header />
 
-      <div>
-        
-        <nav >
-          <div >
-            <Link to="/produtos" ><button>mudar pagina</button></Link>
-            <a> Pesquisar aluno </a>
-            <a> Cadastrar aluno </a>
-            <a> <button style={{ borderRadius: "30px" }}>Sair</button> </a>
-          </div>
-        </nav>
-
-        <div className="rodape">
-          <span>
-            Todos os direitos reservados - 2023 &copy; Caio Almeida Santos-
-          </span>
-        </div>
-      </div>
-      </header>
-      
       <body>
         <h1>{ teste(1,2) }</h1>
         <h2> Opa, testando a propriedade {props.nome}</h2>
+        <Footer />
       </body>
-
+      
     </div>
   );
 };
