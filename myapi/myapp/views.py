@@ -31,14 +31,17 @@ class resposta(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)     
     
-    def delete(self, request, id):
-        try:
-            produto = Produto.objects.get(ID = id)
-            produto.delete()
-            return Response("ok")
-        
-        except Produto.DoesNotExist:
-            return Response("not ok")
+    def delete(self, request, id=0):
+        if id != 0:
+            try:
+                produto = Produto.objects.get(ID=id)
+                produto.delete()
+                return Response("ok")
+            except Produto.DoesNotExist:
+                return Response("not ok")
+        else:
+            # Lógica para lidar com a ausência do parâmetro "id" ou outro valor padrão
+            return Response("Erro: ID não fornecido")
         
 
 
