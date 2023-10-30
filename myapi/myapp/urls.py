@@ -7,8 +7,7 @@ from .views import  resposta
 urlpatterns = [
      
     #Esse path aqui serve como rota para um post de Produtos
-    path('produtos/', resposta.criar_produto),
-    path('produtos/', resposta.criar_produto),
+    path('produtos', resposta.as_view()),
     #path('produto/<int:produto_id>/', views.obter_produto, name='obter_produto'),
     
 ]

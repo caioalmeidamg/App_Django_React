@@ -1,10 +1,12 @@
 from django.shortcuts import render
 from rest_framework import generics,status
-from rest_framework.decorators import api_view
+from rest_framework.views import APIView
 from rest_framework.response import Response
 from .models import Produto
+from rest_framework.decorators import api_view
 from django.http import JsonResponse
 from .serializers import ProdutoSerializer
+
 from django.views.decorators.csrf import csrf_exempt
 
 class ProdutoListCreateView(generics.ListCreateAPIView):
@@ -12,11 +14,16 @@ class ProdutoListCreateView(generics.ListCreateAPIView):
     serializer_class = ProdutoSerializer
 
 
-class resposta:
+class resposta(APIView):
+    
+    def get(self, request):
+        produtos = Produto.objects.all()
+        serializer = ProdutoSerializer(produtos, many=True)
+        return Response(serializer.data)
 
-    @api_view(['POST'])
-    def criar_produto(request):
-        if request.method == 'POST':
+    
+    def post(self, request):
+            
             serializer = ProdutoSerializer(data=request.data)
             if serializer.is_valid():
                 serializer.save()
