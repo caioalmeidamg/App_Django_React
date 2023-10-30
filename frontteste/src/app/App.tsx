@@ -1,7 +1,12 @@
 import { Routes } from "./routes/rotas";
+import { Header } from "./shared/components/Header";
+
 function App(){
   return (
-    <Routes/ > 
+    <div> 
+          
+      <Routes />
+    </div>
   );
 }
 
