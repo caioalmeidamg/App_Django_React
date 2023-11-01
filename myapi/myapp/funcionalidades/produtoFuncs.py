@@ -34,3 +34,4 @@ def deletarProduto(id):
         produto = Produto.objects.all()
         produto.delete()
         return Response("deletados")
+

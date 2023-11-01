@@ -36,9 +36,4 @@ def deletaEstoque():
         estoques.delete()
         return Response("deletados") 
     
-
-
-
-
-
     
