@@ -18,7 +18,7 @@ class Produto(models.Model):
     descricao = models.TextField()
     preco = models.DecimalField(max_digits=10, decimal_places=2)
     ok = models.TextField(null=False)
-    estoque = models.OneToOneField(Estoque, null=False, on_delete=models.PROTECT )
+    estoque = models.ForeignKey(Estoque, null=False, on_delete=models.PROTECT, related_name="estoques" )
 
     #representa a instancia de uma classe em string - ou seja 
     #a sobrescrita desse método serve como uma boa maneira para trabalhar com ele

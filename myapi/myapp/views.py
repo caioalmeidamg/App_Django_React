@@ -8,7 +8,7 @@ from .serializers import ProdutoSerializer, EstoqueSerializer
 class ProdutoListCreateView(generics.ListCreateAPIView):
     queryset = Produto.objects.all()
     serializer_class = ProdutoSerializer
-
+    
 
 #Classe de resposta da view
 class respostaProduto(APIView):
