@@ -39,7 +39,7 @@ export class ListaProdutos extends Component {
             <h1>Lista de Produtos</h1>
             <ul className= {styles.lista}>
                 {produtos.map((produto) => (
-                    <li className= {styles.item} key={produto.id}> <p> {produto.nome} - R${produto.preco} </p></li>
+                    <li className= {styles.item} key={produto.id}> <p> {produto.nome} - R${produto.preco}  {produto.estoque_nome}</p></li>
                 ))}
             </ul>
             <botao />

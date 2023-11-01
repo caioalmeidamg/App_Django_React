@@ -12,7 +12,7 @@ def retornaProduto(id=0):
     elif id == 0:
 
         produtos = Produto.objects.all()
-        serializer = ProdutoSerializer(produtos, many=True)
+        serializer = ProdutoSerializer(produtos, many=True)            
         return Response(serializer.data)
     
 def salvaProduto(dataParam):

@@ -11,7 +11,7 @@ from .funcionalidades.produtoFuncs import salvaProduto,retornaProduto,deletarPro
 class respostaProduto(APIView):
     
     #no get nos adicionamos um valor default do id == 0 para que possamos arrumar as rotas
-    def get(self, request, id):
+    def get(self, request, id=0):
         return retornaProduto(id)
                 
     def post(self, request, id = 0):       
