@@ -1,6 +1,6 @@
 import { Header } from "../shared/components/Header";
 import { Footer } from "../shared/components/Footer";
-
+import styles from "./Home.module.css"
 //teste do que será criado
 function teste(a,b){ return a+b; }
 
@@ -13,16 +13,17 @@ function teste(a,b){ return a+b; }
 export const Home = (props) => {
   return (
 
-    <>
-     <Header/>
+    <div >
+       <body>
        
-    <body>
-        
+          <div className={(styles.teste)}>
           <h1>{ teste(1,2) }</h1>
           <h2> Opa, testando a propriedade {props.nome}</h2>
+          </div>
         <Footer />
       </body>
+    </div>
       
-    </>
+    
   );
 };
