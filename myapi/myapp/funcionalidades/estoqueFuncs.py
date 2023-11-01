@@ -1,4 +1,4 @@
-from ..serializers import ProdutoSerializer, EstoqueSerializer
+from ..serializers import EstoqueSerializer
 from ..models import Produto
 from ..models import Estoque
 from rest_framework import status
@@ -37,4 +37,3 @@ def deletaEstoque():
         return Response("deletados") 
     
 
-   
