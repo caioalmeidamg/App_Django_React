@@ -11,14 +11,14 @@ export const Header = (props) => {
         <h1 className={(styles.apresenta)}> Olá mundo </h1>  
     
         <div className={(styles.centralizado)}>
-          <Link to="/produtos" > <Button variant="contained">Produtos</Button> </Link>
+          <Link to="/produtos" > <Button variant="contained" className={(styles.botao)}>Produtos</Button> </Link>
           
-            <div >
-              <Link to="/produtos" ><button>mudar pagina</button></Link>
-              <a> Pesquisar aluno </a>
-              <a> Cadastrar aluno </a>
+            
+              <Link to="/produtos" > <Button variant="contained" className={(styles.botao)}>Mudar pagina</Button> </Link>
+              <a> <Button variant="contained" className={(styles.botao)}>Mudar pagina</Button> </a>
+              <a> <Button variant="contained" className={(styles.botao)}>Mudar pagina</Button> </a>
               <a> <button style={{ borderRadius: "30px" }}>Sair</button> </a>
-            </div>
+            
         
 
         

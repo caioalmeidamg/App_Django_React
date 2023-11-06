@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom/client';
 import App from './app/App';
 
 import reportWebVitals from './reportWebVitals';
-import { Header } from './app/shared/components/Header';
-import { Footer } from './app/shared/components/Footer';
 
 //Esse root é uma criação do react utilizada para renderizar a aplicação
 const root = ReactDOM.createRoot(
