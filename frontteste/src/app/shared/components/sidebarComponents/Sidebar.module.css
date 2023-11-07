@@ -5,9 +5,11 @@
 
 .apresenta {
     color: white;
-    background-color: rgb(118, 81, 62);
     padding-top: 0.5%;
     margin-top: 0;
-    margin-left: 40%;
     
+}
+
+.tudo {
+    align-items: center;
 }

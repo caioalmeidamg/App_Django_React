@@ -9,10 +9,11 @@ import { IconContext } from "react-icons/lib";
   
 const Nav = styled.div`
   background: rgb(118, 81, 62);
-  height: 80px;
+  height: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  text-align: center;
 `;
   
 const NavIcon = styled(Link)`
@@ -49,7 +50,7 @@ const Sidebar = (props) => {
   const showSidebar = () => setSidebar(!sidebar);
   
   return (
-    <>
+    <div className={(style.tudo)}>
       
         
           <Nav>
@@ -71,7 +72,7 @@ const Sidebar = (props) => {
           </SidebarWrap>
         </SidebarNav>
       
-    </>
+    </ div>
   );
 };
   
