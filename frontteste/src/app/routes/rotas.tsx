@@ -8,7 +8,7 @@ export const Routes = () => {
       <BrowserRouter>
         <Switch>
           
-          <Route path="/"  element={ <div> <Home nome = "caio" peso = "43"/> </div> } />
+          <Route path="/"  element={ <div> <Home nome = "caio" peso = "43"/></div> } />
 
           <Route path="/pagina-inicial" element={ <h1> teste </h1> } />
 
