@@ -14,7 +14,7 @@ class respostaProduto(APIView):
     def get(self, request, id=0):
         return retornaProduto(id)
                 
-    def post(self, request, id = 0):       
+    def post(self, request, id = 0):      
         return salvaProduto(request.data)     
     
     def delete(self, request, id=0):

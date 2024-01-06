@@ -13,3 +13,13 @@
 .tudo {
     align-items: center;
 }
+
+.label{
+    align-items: center;
+}
+
+.centeredContainer {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+  }

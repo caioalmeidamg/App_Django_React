@@ -1,7 +1,5 @@
 export const botao = () => {
-return <button>ok</button>
-    
-
+    return <button>ok</button>
 
 }
 
