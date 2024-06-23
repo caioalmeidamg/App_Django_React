@@ -1,5 +1,5 @@
 
-import styles from "./Quadro.module.css"
+import styles from "../css/Quadro.module.css"
 import Select, { components} from 'react-select';
 import { purple } from "@mui/material/colors";
 import { InputGroup } from "react-bootstrap";

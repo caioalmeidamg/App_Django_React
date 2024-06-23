@@ -1,7 +1,6 @@
-import { Routes } from "./routes/rotas";
+import { Rotas } from "./routes/rotas";
 
 function App(){
-  return ( <div> <Routes /> </div> );
+  return (<Rotas />);
 }
-
 export default App;

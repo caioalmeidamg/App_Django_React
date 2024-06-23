@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
-import style from "./Sidebar.module.css"
+import style from "../css/Sidebar.module.css"
   
 const Nav = styled.div`
   background: rgb(118, 81, 62);

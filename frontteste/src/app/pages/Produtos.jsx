@@ -1,12 +1,13 @@
 import { Footer } from '../components/Footer';
-import { Quadro } from "../components/Quadro";
+import {Table} from '../components/Table'
 import { Header } from '../components/Header';
 
-export const Home = (props) => {
+
+export const Produtos = (props) => {
   return (
     <>
       <Header />
-        <Quadro nome = {props.nome} />
+        <Table/>
       <Footer />     
     </>   
   )

@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Header } from '../Header'
-import styles from '../Quadro.module.css'
+import styles from '../../css/Quadro.module.css'
 
 export function InserirProduto(props) {
 
@@ -28,7 +28,7 @@ export function InserirProduto(props) {
         try {
             console.log(produto)
             // Lógica para enviar os dados usando uma requisição POST
-            const resposta = await fetch('http://127.0.0.1:8000/produtos/', {
+            const resposta = await fetch('produtos/', {
                 method: 'POST',
                 headers: {
                 'Content-Type': 'application/json',
