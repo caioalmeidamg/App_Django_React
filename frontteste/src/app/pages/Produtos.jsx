@@ -1,14 +1,15 @@
-import { Footer } from '../components/Footer';
 import {Table} from '../components/Table'
-import { Header } from '../components/Header';
-
+import { StandartPage } from './StandartPage';
 
 export const Produtos = (props) => {
-  return (
-    <>
-      <Header />
-        <Table/>
-      <Footer />     
-    </>   
+    
+    const actualStyle = () => {       
+        
+    }
+       
+    return (
+    <StandartPage> 
+        <Table style = {{marginTop: "2%"}}/>
+    </StandartPage> 
   )
 };

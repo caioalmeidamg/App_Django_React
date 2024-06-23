@@ -1,11 +1,22 @@
-import styles from '../css/Table.module.css';
 
 export const Table = (props) => {
 
-return(
-    <div style={{height: "50vh", backgroundColor: "grey"}}>
+    const actualStyle = () => {       
+        const defaultStyle = {
+            height: "40vh", 
+            backgroundColor: "grey", 
+            width: "80%", 
+            justifySelf: "center"
+        }
 
-    </div>
-)
+        // Combina os estilos padrão e os estilos passados via props
+        return { ...defaultStyle, ...props.style };
+    }      
+
+    return(
+        <div style={actualStyle()}>
+
+        </div>
+    )
 
 }
