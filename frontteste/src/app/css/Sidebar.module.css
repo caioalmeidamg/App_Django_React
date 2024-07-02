@@ -16,7 +16,38 @@
 }
 
 .centeredContainer {
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    padding-left: 2%;
+    padding-top: 1.5%;
   }
+
+.nav {
+  background: rgb(118, 81, 62);
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}  
+
+.navIcon {
+  color: white;
+  margin-left: 2rem;
+  font-size: 2rem;
+  height: 80px;
+  cursor: pointer;
+  display: flex;
+  margin-left: 2%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sideBarNav {
+  background: grey;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}

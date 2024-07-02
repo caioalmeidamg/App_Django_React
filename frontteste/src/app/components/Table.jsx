@@ -6,7 +6,9 @@ export const Table = (props) => {
             height: "40vh", 
             backgroundColor: "grey", 
             width: "80%", 
-            justifySelf: "center"
+            justifySelf: "center",
+            marginTop: '2%', 
+            borderRadius:'8px'
         }
 
         // Combina os estilos padrão e os estilos passados via props
@@ -14,8 +16,8 @@ export const Table = (props) => {
     }      
 
     return(
-        <div style={actualStyle()}>
-
+        <div id="tabela" style={actualStyle()}>
+            <header style={{backgroundColor: "#333", borderTopLeftRadius:'8px', borderTopRightRadius:'8px', height: "10%"}}></header>
         </div>
     )
 

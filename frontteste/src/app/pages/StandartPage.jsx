@@ -8,7 +8,7 @@ export const StandartPage = (props) => {
       return {
           display: 'flex',
           justifyContent: 'center',
-          minHeight: '100vh', // 100% da altura da tela      
+          flex: '1'    
       }  
     } else {
       return props.style
@@ -16,12 +16,12 @@ export const StandartPage = (props) => {
   }
   
   return (
-    <>
+    <div style={{display: 'flex', flexDirection: 'column',minHeight: '100vh',}}>
       <Header />
         <div style={actualStyle()}>
             {props.children}
         </div>
       <Footer />     
-    </>   
+    </div>   
   );
 };
